@@ -1,3 +1,3 @@
 # EAWCozyGlow
  
-Submod to add Cozy Glow as an Equestrian conspiracy.
+Submod to add Cozy Glow to Equestria.

@@ -69,5 +69,9 @@ country_event = {
 		set_cosmetic_tag = EQS_COZY
 		add_ideas = defiant_government
 		add_ideas = worried_public
+		add_ideas = twilight_sparkle_puppet
+		hidden_effect = {
+			remove_ideas = twilight_sparkle
+		}
 	}
 }

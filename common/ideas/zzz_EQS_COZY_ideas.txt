@@ -72,9 +72,15 @@ ideas = {
 				original_tag = EQS
 			}
 			visible = {
-				has_country_leader = "Cozy Glow"
+				has_country_leader = {
+					name = "Cozy Glow"
+					ruling_only = yes
+				}
 			}
 			traits = { element_of_magic popular_figurehead }
+			allowed_to_remove = {
+                always = no
+            }
 		}
 	}
 }

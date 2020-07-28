@@ -13,31 +13,59 @@ country_event = {
 		name = cozycoup.1.a
 		add_political_power = -15
 		add_ideas =  cozy_interventionism
+		hidden_effect = {
+			country_event = { id = cozycoup.2 days = 10 }
+		}
 	}
-
 }
 
 country_event = {
-	id = equestria.2
-	immediate = {log = "[GetDateText]: [Root.GetName]: event equestria.2"}
-	title = equestria.2.t
-	desc = equestria.2.d
+	id = cozycoup.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cozycoup.2"}
+	title = cozycoup.2.t
+	desc = cozycoup.2.d
 	picture = GFX_event_buffalo_relations
 
 	is_triggered_only = yes
 
 	option = {
-		name = equestria.2.a
+		name = cozycoup.2.a
 		add_political_power = -35
-		BUF = {
-			country_event = { days = 1 id = bufstate.1 }
-		}
 		ai_chance = { factor = 95 }
+		hidden_effect = {
+			country_event = { id = cozycoup.3 days = 10 }
+		}
 	}
 	option = {
-		name = equestria.2.b
+		name = cozycoup.2.b
 		add_political_power = -250
 		add_stability = -0.15
 		add_war_support = -0.15
+		hidden_effect = {
+			country_event = { id = cozycoup.3 days = 10 }
+		}
+	}
+}
+
+country_event = {
+	id = cozycoup.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cozycoup.3"}
+	title = cozycoup.3.t
+	desc = cozycoup.3.d
+	picture = GFX_event_buffalo_relations
+
+	is_triggered_only = yes
+
+	option = {
+		name = cozycoup.3.a
+		set_party_name = { ideology = democratic name = EQS_COZY_harmony long_name = EQS_COZY_harmony_long }
+		create_country_leader = {
+			name = "Cozy Glow"
+			picture = "gfx/leaders/STG/Darkwing.tga"
+			expire = "1965.1.1"
+			ideology = interventionist_harmony
+			traits = {}
+		}
+		set_cosmetic_tag = EQS_COZY
 	}
 }

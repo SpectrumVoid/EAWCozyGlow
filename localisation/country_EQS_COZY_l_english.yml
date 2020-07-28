@@ -1,0 +1,30 @@
+l_english:
+
+#COUNTRYNAME
+
+#NAMES
+
+#PARTIES
+
+#FOCUS LOCALISATION
+
+#DECISIONS
+
+#IDEAS
+cozy_interventionism:0 "Interventionism on the Rise"
+ defiant_government:0 "Revolting Government"
+ defiant_government2:0 "Defiant Government"
+ defiant_government3:0 "Stubborn Government"
+ worried_public:0 "Terrified Public"
+ worried_public2:0 "Worried Public"
+ worried_public2:0 "Concerned Public"
+
+#EVENTS
+#COZY COMES TO POWER - THESTRAL ISSUE RESOLVED PEACEFULLY
+ cozycoup.1.t:0 "Rumors of Discontent"
+ cozycoup.1.d:0 "Recently reports of radicals have trickled in to our government. Many citizens, it seems, are very disappointed with our lack of interventionism in foreign powers. Some agitators have claimed that the Changeling Hegemony should never have been allowed to rebuild without Equestrian supervision. They are calling for a preemptive war of aggression against the changelings to bring harmony to their lands."
+ cozycoup.1.a:0 "We can't go imposing our values on others by force!"
+ cozycoup.2.t:0 "Discontent Grows"
+ cozycoup.2.d:0 "Unfortunately it seems the protests are only intensifying. What can we do?"
+ equestria.2.a:0 "We have to formally reject this!"
+ equestria.2.b:0 "Maybe we can find a compromise?"

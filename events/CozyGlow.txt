@@ -39,35 +39,5 @@ country_event = {
 		add_political_power = -250
 		add_stability = -0.15
 		add_war_support = -0.15
-		add_named_threat = { threat = 5 name = EQS_aggresion_on_BUF }
-		if = {
-			limit = { country_exists = BUF }
-			hidden_effect = {
-				create_wargoal = { 
-					type = annex_everything
-					target = BUF
-				}
-			}
-			declare_war_on = {
-				target = BUF type = annex_everything
-			}
-		}
-		BUF = {
-			country_event = { days = 1 id = bufstate.2 }
-		}
-		hidden_effect = {
-			modify_country_flag = { flag = celestia_evil_meter value = 12 }
-		}
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				OR = { is_historical_focus_on = yes has_global_flag = EQS_nice_celestia }
-			}
-			modifier = {
-				factor = 2
-				has_global_flag = EQS_evil_celestia
-			}
-		}
 	}
 }

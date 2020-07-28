@@ -67,7 +67,7 @@ ideas = {
 	}
 	political_advisor = {
 		twilight_sparkle_puppet = {
-			picture = idea_twilight_sparkle
+			picture = twilight_sparkle
 			allowed = {
 				original_tag = EQS
 			}

@@ -67,5 +67,7 @@ country_event = {
 			traits = { militant_harmonist }
 		}
 		set_cosmetic_tag = EQS_COZY
+		add_ideas = defiant_government
+		add_ideas = worried_public
 	}
 }

@@ -66,5 +66,15 @@ ideas = {
 		}
 	}
 	political_advisor = {
+		twilight_sparkle_puppet = {
+			picture = idea_twilight_sparkle
+			allowed = {
+				original_tag = EQS
+			}
+			visible = {
+				has_country_leader = "Cozy Glow"
+			}
+			traits = { element_of_magic popular_figurehead }
+		}
 	}
 }

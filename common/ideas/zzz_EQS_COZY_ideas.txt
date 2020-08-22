@@ -19,8 +19,6 @@ ideas = {
 				war_support_weekly = 0.005
 			}
 		}
-	}
-	country = {
 		defiant_government = {
 			picture = CHN_equestria_chaos3
 			allowed = {
@@ -40,8 +38,61 @@ ideas = {
 				economy_cost_factor = 2
 			}
 		}
-	}
-	country = {
+		defiant_government2 = {
+			picture = CHN_equestria_chaos2
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				trade_laws_cost_factor = 1
+				economy_cost_factor = 1
+			}
+		}
+		defiant_government3 = {
+			picture = CHN_equestria_chaos1
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		cozy_freshlook = {
+			picture = idea_friendly_harmony
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+			}
+
+		}
 		worried_public = {
 			picture = CHN_equestria_chaos3
 			allowed = {
@@ -62,6 +113,50 @@ ideas = {
 				consumer_goods_factor = 0.5
 				local_resources_factor = -0.5
 				research_speed_factor = -0.5
+			}
+		}
+		worried_public2 = {
+			picture = CHN_equestria_chaos2
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard =  -0.25
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.25
+				research_speed_factor = -0.25
+			}
+		}
+		worried_public3 = {
+			picture = CHN_equestria_chaos1
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = democratic
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard =  -0.1
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+				research_speed_factor = -0.1
 			}
 		}
 	}

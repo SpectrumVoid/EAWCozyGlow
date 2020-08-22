@@ -1,0 +1,55 @@
+﻿focus_tree = {
+	id = cozy_equestria
+
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = { x = 290 y = 2500 }
+	### Cozy begins to consolidate her power  ###
+	focus = {
+		id = EQS_COZY_golly
+		cost = 3.00
+		ai_will_do = { factor = 100 }
+		x = 10
+		y = 0
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			add_stability = 0.15
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = EQS_COZY_fresh_look
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		relative_position_id = EQS_COZY_golly
+		prerequisite = { focus = EQS_COZY_golly }
+		x = -4
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			swap_ideas = {
+				remove_idea = defiant_government
+				add_idea = defiant_government2
+			}
+			add_ideas = cozy_freshlook
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = EQS_COZY_begin_reforms
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = EQS_COZY_fresh_look }
+		relative_position_id = EQS_COZY_fresh_look
+		x = 0
+		y = -2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			add_ideas = export_focus
+			add_ideas = partial_economic_mobilisation
+			add_political_power = -50
+		}
+	}
+
+}

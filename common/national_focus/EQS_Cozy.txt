@@ -25,7 +25,7 @@
 		relative_position_id = EQS_COZY_golly
 		prerequisite = { focus = EQS_COZY_golly }
 		x = -4
-		y = 2
+		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
 			swap_ideas = {
@@ -43,13 +43,66 @@
 		prerequisite = { focus = EQS_COZY_fresh_look }
 		relative_position_id = EQS_COZY_fresh_look
 		x = 0
-		y = -2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			swap_ideas = {
+				remove_idea = defiant_government2
+				add_idea = defiant_government3
+			}
+		}
+	}
+	focus = {
+		id = EQS_COZY_efficient_leadership
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = EQS_COZY_fresh_look }
+		relative_position_id = EQS_COZY_fresh_look
+		x = -1
+		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
 			add_ideas = export_focus
 			add_ideas = partial_economic_mobilisation
 			add_political_power = -50
 		}
+	}
+	focus = {
+		id = EQS_COZY_wisdom_of_youth
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = EQS_COZY_fresh_look }
+		relative_position_id = EQS_COZY_fresh_look
+		x = 1
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			add_political_power = 300
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = EQS_COZY_reign_in_the_politicians
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = EQS_COZY_begin_reforms
+		}
+		prerequisite = {
+			focus = EQS_COZY_efficient_leadership
+		}
+		prerequisite = {
+			focus = EQS_COZY_wisdom_of_youth
+		}
+		relative_position_id = EQS_COZY_fresh_look
+		x = 0
+		y = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			remove_idea = defiant_government3
+			add_ideas = cozy_sycophants1
+		}
+
 	}
 
 }

@@ -159,6 +159,19 @@ ideas = {
 				research_speed_factor = -0.1
 			}
 		}
+		cozy_sycophants1 = {
+			picture = equestrian_influence
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.1
+			}
+		}
 	}
 	political_advisor = {
 		twilight_sparkle_puppet = {

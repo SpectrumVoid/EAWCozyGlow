@@ -70,6 +70,7 @@ country_event = {
 		add_ideas = defiant_government
 		add_ideas = worried_public
 		add_ideas = twilight_sparkle_puppet
+		load_focus_tree = cozy_equestria
 		hidden_effect = {
 			remove_ideas = twilight_sparkle
 		}

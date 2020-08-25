@@ -33,7 +33,6 @@
 				add_idea = defiant_government2
 			}
 			add_ideas = cozy_freshlook
-			add_political_power = 150
 		}
 	}
 	focus = {
@@ -77,7 +76,7 @@
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
-			add_political_power = 300
+			add_political_power = 150
 			add_stability = 0.1
 		}
 	}

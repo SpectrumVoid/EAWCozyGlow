@@ -107,7 +107,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.5
+				stability_weekly = -0.01
 				industrial_capacity_factory = -0.5
 				industrial_capacity_dockyard =  -0.5
 				consumer_goods_factor = 0.5
@@ -129,7 +129,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.25
+				stability_weekly = -0.005
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard =  -0.25
 				consumer_goods_factor = 0.25
@@ -151,7 +151,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.1
+				stability_weekly = -0.002
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard =  -0.1
 				consumer_goods_factor = 0.1

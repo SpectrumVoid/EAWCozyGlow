@@ -1,4 +1,5 @@
 ﻿add_namespace = cozycoup
+add_namespace = cozystart
 add_namespace = cozymain
 
 country_event = {
@@ -74,5 +75,22 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = twilight_sparkle
 		}
+	}
+}
+
+
+country_event = {
+	id = cozystart.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cozystart.1"}
+	title = cozystart.1.t
+	desc = cozystart.1.d
+	picture = GFX_event_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = cozystart.1.a
+		add_stability = 0.1
+		add_political_power = 150		
 	}
 }

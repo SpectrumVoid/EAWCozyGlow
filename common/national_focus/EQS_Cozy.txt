@@ -8,26 +8,52 @@
 	### Cozy begins to consolidate her power  ###
 	focus = {
 		id = EQS_COZY_golly
-		cost = 3.00
+		cost = 1.00
 		ai_will_do = { factor = 100 }
 		x = 10
 		y = 0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
-			add_stability = 0.15
-			add_political_power = 150
+			country_event = cozystart.1
+		}
+	}
+	focus = {
+		id = EQS_COZY_neighbors
+		cost = 3.00
+		ai_will_do = { factor = 100 }
+		relative_position_id = EQS_COZY_golly
+		prerequisite = { focus = EQS_COZY_golly }
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_neighbors"
+			add_political_power = 50
+			country_event = cozystart.2
+		}
+	}
+	focus = {
+		id = EQS_COZY_friendship_in_our_time
+		cost = 3.00
+		ai_will_do = { factor = 100 }
+		relative_position_id = EQS_COZY_neighbors
+		prerequisite = { focus = EQS_COZY_neighbors }
+		x = 0
+		y = 4
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_neighbors"
+			add_ideas = cozy_newfriendship
 		}
 	}
 	focus = {
 		id = EQS_COZY_fresh_look
-		cost = 5.00
+		cost = 3.00
 		ai_will_do = { factor = 10 }
 		relative_position_id = EQS_COZY_golly
 		prerequisite = { focus = EQS_COZY_golly }
 		x = -4
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_fresh_look"
 			swap_ideas = {
 				remove_idea = defiant_government
 				add_idea = defiant_government2
@@ -37,14 +63,14 @@
 	}
 	focus = {
 		id = EQS_COZY_begin_reforms
-		cost = 5.00
+		cost = 3.00
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = EQS_COZY_fresh_look }
 		relative_position_id = EQS_COZY_fresh_look
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_begin_reforms"
 			swap_ideas = {
 				remove_idea = defiant_government2
 				add_idea = defiant_government3
@@ -53,14 +79,14 @@
 	}
 	focus = {
 		id = EQS_COZY_efficient_leadership
-		cost = 5.00
+		cost = 3.00
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = EQS_COZY_fresh_look }
 		relative_position_id = EQS_COZY_fresh_look
 		x = -1
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_efficient_leadership"
 			add_ideas = export_focus
 			add_ideas = partial_economic_mobilisation
 			add_political_power = -50
@@ -68,21 +94,21 @@
 	}
 	focus = {
 		id = EQS_COZY_wisdom_of_youth
-		cost = 5.00
+		cost = 3.00
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = EQS_COZY_fresh_look }
 		relative_position_id = EQS_COZY_fresh_look
 		x = 1
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_wisdom_of_youth"
 			add_political_power = 150
 			add_stability = 0.1
 		}
 	}
 	focus = {
 		id = EQS_COZY_reign_in_the_politicians
-		cost = 5.00
+		cost = 3.00
 		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = EQS_COZY_begin_reforms
@@ -97,11 +123,130 @@
 		x = 0
 		y = 3
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_golly"
-			remove_idea = defiant_government3
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_reign_in_the_politicians"
+			remove_ideas = defiant_government3
 			add_ideas = cozy_sycophants1
 		}
 
+	}
+	focus = {
+		id = EQS_COZY_wanna_be_friends
+		cost = 3.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = EQS_COZY_reign_in_the_politicians
+		}
+		prerequisite = {
+			focus = EQS_COZY_neighbors
+		}
+		relative_position_id = EQS_COZY_reign_in_the_politicians
+		x = 2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_wanna_be_friends"
+		}
+
+	}
+	focus = {
+		id = EQS_COZY_calm
+		cost = 3.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = EQS_COZY_golly
+		}
+		relative_position_id = EQS_COZY_golly
+		x = 4
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_calm"
+			swap_ideas = {
+				remove_idea = worried_public
+				add_idea = worried_public2
+			}
+		}
+	}
+	focus = {
+		id = EQS_COZY_plea
+		cost = 3.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = EQS_COZY_calm
+		}
+		relative_position_id = EQS_COZY_calm
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_calm"
+			swap_ideas = {
+				remove_idea = worried_public2
+				add_idea = worried_public3
+			}
+		}
+	}
+	focus = {
+		id = EQS_COZY_listen
+		cost = 3.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = EQS_COZY_calm
+		}
+		relative_position_id = EQS_COZY_calm
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_listen"
+			add_ideas = placated_secessionists
+		}
+	}
+	focus = {
+		id = EQS_COZY_end_to_fighting
+		cost = 3.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = EQS_COZY_plea
+		}
+		prerequisite = {
+			focus = EQS_COZY_listen
+		}
+		relative_position_id = EQS_COZY_calm
+		x = 0
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_end_to_fighting"
+			remove_ideas = worried_public3
+		}
+	}
+	
+	focus = {
+		id = EQS_COZY_meet_with_military
+		cost = 3.00
+		ai_will_do = { factor = 100 }
+		relative_position_id = EQS_COZY_neighbors
+		prerequisite = { focus = EQS_COZY_neighbors }
+		prerequisite = { focus = EQS_COZY_end_to_fighting }
+
+		x = 2
+		y = 4
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_protector_of_friendship"
+			country_event = cozystart.3
+		}
+	}
+	focus = {
+		id = EQS_COZY_protector_of_friendship
+		cost = 3.00
+		ai_will_do = { factor = 100 }
+		relative_position_id = EQS_COZY_friendship_in_our_time
+		prerequisite = { focus = EQS_COZY_friendship_in_our_time }
+		prerequisite = { focus = EQS_COZY_wanna_be_friends }
+		prerequisite = { focus = EQS_COZY_meet_with_military }
+
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQS_COZY_protector_of_friendship"
+			country_event = cozystart.10
+		}
 	}
 
 }

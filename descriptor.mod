@@ -1,4 +1,4 @@
-version="1.9.3"
+version="1.10.*"
 picture="thumbnail.png"
 tags={
 	"Alternative History"
@@ -8,4 +8,4 @@ name="(EaW) Cozy Glow"
 dependencies={
 	"Equestria at War"
 }
-supported_version="1.9.3"
+supported_version="1.10.*"

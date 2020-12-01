@@ -53,7 +53,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event cozycoup.3"}
 	title = cozycoup.3.t
 	desc = cozycoup.3.d
-	picture = GFX_event_speech
+	picture = GFX_event_school
 
 	is_triggered_only = yes
 

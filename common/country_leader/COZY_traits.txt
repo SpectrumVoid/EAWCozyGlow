@@ -1,0 +1,28 @@
+leader_traits = {
+
+	protector_of_friendship = {
+		random = no		
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		political_power_gain = 0.1
+		democratic_drift = 0.1
+		ai_focus_aggressive_factor = 0.5
+	}
+	empress_of_friendship = { # Need to represent total control of the government
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.2
+		political_power_gain = 0.2
+		justify_war_goal_time = -0.75
+		offensive_war_stability_factor = 0.4
+		political_advisor_cost_factor = -0.3
+		trade_laws_cost_factor = -0.3
+		mobilization_laws_cost_factor = -0.3
+		economy_cost_factor = -0.3
+		high_command_cost_factor = -0.3
+		air_chief_cost_factor = -0.3
+		army_chief_cost_factor = -0.3
+		navy_chief_cost_factor = -0.3	
+		ai_focus_aggressive_factor = 0.75
+	}
+}

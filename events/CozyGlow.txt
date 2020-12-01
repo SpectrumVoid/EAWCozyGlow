@@ -61,17 +61,16 @@ country_event = {
 		name = cozycoup.3.a
 		set_party_name = { ideology = democratic name = EQS_COZY_harmony long_name = EQS_COZY_harmony_long }
 		create_country_leader = {
-			name = "Cozy Glow"
+			name = "Twilight Sparkle"
 			picture = "gfx/leaders/EQS/Cozy.tga"
 			expire = "1965.1.1"
-			ideology = interventionist_harmony
-			traits = { militant_harmonist }
+			ideology = alicornrule
+			traits = { militant_harmonist inexperienced_monarch }
 		}
 		set_cosmetic_tag = EQS_COZY
 		add_ideas = defiant_government
 		add_ideas = worried_public
-		add_ideas = twilight_sparkle_puppet
-		load_focus_tree = cozy_equestria
+		load_focus_tree = cozy_equestria_focus
 		hidden_effect = {
 			remove_ideas = twilight_sparkle
 		}
@@ -92,5 +91,26 @@ country_event = {
 		name = cozystart.1.a
 		add_stability = 0.1
 		add_political_power = 150		
+	}
+}
+
+country_event = {
+	id = cozystart.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cozystart.10"}
+	title = cozystart.10.t
+	desc = cozystart.10.d
+	picture = GFX_event_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = cozystart.10.a
+		create_country_leader = {
+			name = "Cozy Glow"
+			picture = "gfx/leaders/EQS/Cozy.tga"
+			expire = "1965.1.1"
+			ideology = interventionist_harmony
+			traits = { militant_harmonist protector_of_friendship }
+		}
 	}
 }

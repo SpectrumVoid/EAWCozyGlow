@@ -7,6 +7,7 @@
 #PARTIES
 
 #FOCUS LOCALISATION
+ cozy_equestria_focus:0 "the Focus Tree of True Harmony"
 
 #DECISIONS
 
@@ -18,6 +19,8 @@ cozy_interventionism:0 "Interventionism on the Rise"
  worried_public:0 "Terrified Public"
  worried_public2:0 "Worried Public"
  worried_public3:0 "Concerned Public"
+ cozy_decoy:0 "Cozy Glow"
+ cozy_decoy_desc:0 "A young and brilliant pegasus filly, Cozy has graduated top of her class at the School of Friendship. She's proven a highly capable bureaucrat and quite in touch with the people, however some traditionalists fear her fiery rhetoric may be drawing Equestria in a dangerous direction."
 
  twilight_sparkle_puppet:0 "Twilight Sparkle"
  twilight_sparkle_puppet_desc:0 "Princess Twilight Sparkle is an alicorn, the Element of Magic, and the Princess of Friendship. Despite all this, she remains humble and prefers to spend time with her friends and family, or reading books in her vast library of the Ponyville Castle. Her magical talent is extremely impressive, yet whenever she faced grave dangers and threats, it was friendship that saved her.\n\nWith the abdication of Princess Celestia and Princess Luna, Twilight Sparkle is now the highest authority in the country. However, her actual legal power has been greatly reduced under Cozy Glow, and she is in effect a figurehead."
@@ -31,9 +34,15 @@ cozy_interventionism:0 "Interventionism on the Rise"
  cozycoup.2.d:0 "Unfortunately it seems the protests are only intensifying. What can we do?"
  cozycoup.2.a:0 "We have to formally reject this!"
  cozycoup.2.b:0 "Maybe we can find a compromise?"
- cozycoup.3.t:0 "A New Kind of Leader"
- cozycoup.3.d:0 "Under cloudy midmorning skies, Princess Twilight Sparkle made a speech before a massive crowd at Canterlot.\n\n"With the recent Vote of No Confidence ousting my mentor Celestia and my friend Luna from power, I am left in charge. However, the Equestrian people have spoken, and the consensus is a more active foreign policy. Thus, I have decided to appoint as head of state a brilliant thinker and negotiator. Although she is quite young, she has already shown herself to be very skilled at finding a compromise with us. Everypony, it is my privilege to introduce the new Protector of Friendship, Cozy Glow!"\n\nThe little filly fluttered onto the stage with a winning smile. "Golly! This is, just, wow! I don't know what to say. I never imagined myself in charge of Equestria, but here I am. Thank you, thank you so much! I promise to protect you all against evil!"\n\nThe crowd roared.\n\n"I promise to bring harmony throughout the land, lifting up everycreature in the world!"\n\nThe crowd roared.\n\n"I promise to help protect the weak from the strong, to liberate prisoners from their tyrants!"\n\nThe crowd went wild.\n\n"And I promise to ensure Harmony will last a thousand years more!"\n\nThe crowd went mad. One word, proclaimed over and over again, reached to the top of the Canterlot spires:"
- cozycoup.3.a:0 "Harmony! Harmony! Harmony!"
+
+ cozycoup.3.t:0 "A New Idea"
+ cozycoup.3.d:0 "Twilight paced back and forth in the School of Friendship's office. Celestia and Luna had been removed from power, leaving her nominally in charge. But she had no idea how to run a kingdom! She didn't know what to do.\n\nA knock at her door jolted her out of her reverie. A young pegasus filly flew in. "I heard you pacing back and forth," she began. "And I wanted to get you some tea! I know it must be hard, but I'm sure you can rise to the task."\n\n"Thank you, Cozy," Twilight answered, sipping her drink. "It's just... the ponies are tired of the old status quo. Maybe I'm not the right pony for the job after all."\n\n"You totally are!" Cozy urged. "You just need some help! And as a good friend, I'll be here to do whatever you need!"\n\nTwilight blinked. "Actually, Cozy, that might be exactly what we need. A brilliant, charismatic face of the government, an ordinary citizen to give everypony an ear and come up with good ideas to fix their problems. Like an ombudspony for the whole country!"\n\n"That does sound really good," Cozy agreed, "but who could do that? It sounds like a big responsibility..."\n\nTwilight grinned, and replied,"
+ cozycoup.3.a:0 ""You, of course! You're practically made for that kind of job!""
+
+ cozystart.10.t:0 "A New Kind of Leader"
+ cozystart.10.d:0 "Under cloudy midmorning skies, Princess Twilight Sparkle made a speech before a massive crowd at Canterlot.\n\n"With the recent Vote of No Confidence ousting my mentor Celestia and my friend Luna from power, I am left in charge. However, the Equestrian people have spoken, and the consensus is a more active foreign policy. Thus, I have decided to appoint as head of state a brilliant thinker and negotiator. Although she is quite young, she has already shown herself to be very skilled at finding a compromise with us. Everypony, it is my privilege to introduce the new Protector of Friendship, Cozy Glow!"\n\nThe little filly fluttered onto the stage with a winning smile. "Golly! This is, just, wow! I don't know what to say. I never imagined myself in charge of Equestria, but here I am. Thank you, thank you so much! I promise to protect you all against evil!"\n\nThe crowd roared.\n\n"I promise to bring harmony throughout the land, lifting up everycreature in the world!"\n\nThe crowd roared.\n\n"I promise to help protect the weak from the strong, to liberate prisoners from their tyrants!"\n\nThe crowd went wild.\n\n"And I promise to ensure Harmony will last a thousand years more!"\n\nThe crowd went mad. One word, proclaimed over and over again, reached to the top of the Canterlot spires:"
+ cozystart.3.a:0 "Harmony! Harmony! Harmony!"
+
 
  EQS_COZY_harmony:0 "Neo-Harmonists"
  EQS_COZY_harmony_long:0 "Bringers of a Harmonic World"

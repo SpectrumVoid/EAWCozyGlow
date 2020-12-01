@@ -169,11 +169,35 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				political_power_factor = 0.10
+			}
+		}
+		placated_secessionists = {
+			picture = equestrian_influence
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
 				stability_weekly = 0.01
 			}
+
 		}
 	}
 	political_advisor = {
+		cozy_decoy = {
+			picture = cozy_glow
+			allowed = {
+				original_tag = EQS
+			}
+			visible = {
+				has_idea = cozy_decoy
+			}
+			traits = { militant_harmonist social_reformer hawk }
+		}
 		twilight_sparkle_puppet = {
 			picture = twilight_sparkle
 			allowed = {

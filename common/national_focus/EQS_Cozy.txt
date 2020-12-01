@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = cozy_equestria
+	id = cozy_equestria_focus
 
 	country = {
 		factor = 0

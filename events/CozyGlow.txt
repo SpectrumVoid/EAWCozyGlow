@@ -62,10 +62,10 @@ country_event = {
 		set_party_name = { ideology = democratic name = EQS_COZY_harmony long_name = EQS_COZY_harmony_long }
 		create_country_leader = {
 			name = "Twilight Sparkle"
-			picture = "gfx/leaders/EQS/Cozy.tga"
+			picture = "gfx/leaders/ELF/TwilightSparkle.tga"
 			expire = "1965.1.1"
 			ideology = alicornrule
-			traits = { militant_harmonist inexperienced_monarch }
+			traits = { element_of_magic }
 		}
 		set_cosmetic_tag = EQS_COZY
 		add_ideas = defiant_government

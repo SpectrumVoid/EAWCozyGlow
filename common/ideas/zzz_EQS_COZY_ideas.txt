@@ -193,21 +193,24 @@ ideas = {
 			allowed = {
 				original_tag = EQS
 			}
+			allowed_to_remove = {
+                always = no
+            }
 			visible = {
 				has_idea = cozy_decoy
 			}
-			traits = { militant_harmonist social_reformer hawk }
+			traits = { social_reformer hawk }
 		}
 		twilight_sparkle_puppet = {
 			picture = twilight_sparkle
 			allowed = {
 				original_tag = EQS
 			}
+			allowed_to_remove = {
+                always = no
+            }
 			visible = {
-				has_country_leader = {
-					name = "Cozy Glow"
-					ruling_only = yes
-				}
+				has_country_flag = cozytakeover
 			}
 			traits = { element_of_magic popular_figurehead }
 			allowed_to_remove = {

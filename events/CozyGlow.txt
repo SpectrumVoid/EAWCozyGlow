@@ -104,7 +104,12 @@ country_event = {
 
 	option = {
 		name = cozystart.10.a
+		set_country_flag = cozytakeover
 		set_cosmetic_tag = EQS_COZY
+		swap_ideas = {
+			remove_idea = cozy_decoy
+			add_idea = twilight_sparkle_puppet
+		}
 		set_party_name = { ideology = democratic name = EQS_COZY_harmony long_name = EQS_COZY_harmony_long }
 		create_country_leader = {
 			name = "Cozy Glow"

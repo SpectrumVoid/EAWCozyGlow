@@ -1223,6 +1223,6 @@ BRZ_LSC = {
 	color_ui = rgb { 204 0 0 }
 }
 EQS_COZY = {
-	color =  rgb { 223 80 158 }
-	color_ui = rgb { 203 24 122 }
+	color =  rgb { 246 193 219 }
+	color_ui = rgb { 246 193 219 }
 }

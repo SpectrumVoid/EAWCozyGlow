@@ -2,7 +2,7 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 ############### THIS FILE DEFINES THE SHAPE, FORM, AND TEXT OF THE GUI FOR THE SUPEREVENT
 	
 	containerWindowType = {
-		name = "TNO_SG_big_event_posada_wins_custom_window"
+		name = "EAW_SG_big_event_posada_wins_custom_window"
 		size = { width = 220 height = 128 }
 		position = { x=0 y=-210 }
 		Orientation = center
@@ -37,7 +37,7 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 	}
 
 	containerWindowType = {
-		name = "TNO_SG_big_event_frame_posada_wins_custom"
+		name = "EAW_SG_big_event_frame_posada_wins_custom"
 		size = { width = 588 height = 465 }
 		position = { x=0 y=0 }
 		Orientation = center
